@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2026 Stefan Eschmann
 
-;; Author: Stefan Eschmann <parhelik@gmail.com>
+;; Author: Stefan Eschmann <seschmadev@gmail.com>
 ;; URL: https://github.com/seschma/.emacs.d/
 ;; License: GNU GPL v3+
 
@@ -48,11 +48,19 @@
 ;; Disable bell
 (setq ring-bell-function 'ignore)
 
+
+
 ;;; Package settings
 
 (use-package which-key
   :init (which-key-mode))
 
-;(use-package markdown-mode)
+(use-package markdown-mode
+  :ensure t
+  :defer t)
+
+;; Make scripts exectuable
+(add-hook 'after-save-hook
+	  'executable-make-buffer-file-executable-if-script-p)
 
 ;;; init.el ends here
