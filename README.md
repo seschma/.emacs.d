@@ -1,2 +1,10 @@
 # .emacs.d
-My personal emacs settings
+My personal GNU Emacs configuation.
+
+## Quickstart
+```bash
+git clone https://github.com/seschma/.emacs.d ~/
+```
+
+## License
+GNU GPL v3.0+
