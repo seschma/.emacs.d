@@ -1,5 +1,5 @@
 # .emacs.d
-My personal GNU Emacs configuation.
+My personal GNU Emacs configuration.
 
 ## Quickstart
 ```bash
